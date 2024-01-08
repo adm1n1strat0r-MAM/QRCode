@@ -13,7 +13,7 @@ import {
 
 // router.post("/addInfo", upload.single("pdf"), addInfo);
 router.post("/addInfo", addInfo);
-router.get("/getInfo", getAllInfo);
+router.get("/get_All_Info", getAllInfo);
 router.get("/getInfo/:id", getInfo);
 router.put("/updateInfo/:id", updateInfo);
 
