@@ -4,7 +4,6 @@ import { google } from "googleapis";
 // import fs from "fs";
 // import path from "path";
 
-
 const auth = new google.auth.GoogleAuth({
   keyFile: "credentials.json",
   scopes: [
@@ -15,7 +14,6 @@ const auth = new google.auth.GoogleAuth({
 // const drive = google.drive({ version: "v3", auth });
 const authClientObject = await auth.getClient();
 const spreadsheetId = "1cpDWjOUDRvVQQQ1W7qhYzXs4tj11P5q0Uw46zYbTVLw";
-
 
 const googleSheetsInstance = google.sheets({
   version: "v4",
@@ -48,6 +46,7 @@ export const getAllInfo = async (req, res, next) => {
       DOB: row[4],
       ADDRESS: row[5],
       PROGRAM: row[6],
+      DURATION: row[7],
       // ...other fields from the row
     }));
 
@@ -68,6 +67,8 @@ export const getInfo = async (req, res, next) => {
       DOB: row[4],
       ADDRESS: row[5],
       PROGRAM: row[6],
+      DURATION: row[7],
+
       // ...other fields from the row
     };
 
