@@ -48,7 +48,6 @@ export const getAllInfo = async (req, res, next) => {
       DOB: row[4],
       ADDRESS: row[5],
       PROGRAM: row[6],
-      DURATION: row[7],
       // ...other fields from the row
     }));
 
@@ -61,8 +60,7 @@ export const getInfo = async (req, res, next) => {
   try {
     const values = await getDataFromSheets();
     const row = values.find((row) => row[0] === req.params.id);
-
-    const user = values.map((row) => ({
+    const user = {
       Serial_Number: row[0],
       NAME: row[1],
       PASSPORT_NO: row[2],
@@ -70,9 +68,8 @@ export const getInfo = async (req, res, next) => {
       DOB: row[4],
       ADDRESS: row[5],
       PROGRAM: row[6],
-      DURATION: row[7]
       // ...other fields from the row
-    }));
+    };
 
     res.send(user);
   } catch (err) {
