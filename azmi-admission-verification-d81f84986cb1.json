@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "azmi-admission-verification",
+  "private_key_id": "d81f84986cb176320afda4024cb6b0c115a4deb5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCslI7xgT6awgql\nu+ZNnhBgqGOw7XIum5PoXfLSQ74ILyiU+Hk8jY1SxbDD20wZrEIq0lheZM8lQskW\n5gI2uF12IyD/iDOoEwyApG35HXWX9v+Ki8tPKrBj3wlbyIi5RqfmmQvhxdeZRPFn\nT30kIbwGWF0ONolG+kwwJlMY3Hh2qetFoI7CrU3cMalF/Cc/NG/Pn7uzufVsmzOm\n5KZpRu2CYczr25Gr7zaDCRc2FcQWPQ2PwRUqjKTvFGnAnWUCdzcHqxk0Ojx/KVkj\nn7Dgdv00YS0PI3SzFc416Mj4ggIEBZzv2Aj4AWySUQEhCv5pkQj3Y1xHndN62Bl3\nQkUXldpPAgMBAAECggEABPZ/R0OnJeCXWV162+ofhSk0ydnyMwGixJnR5QR6aHGz\nTY8drNeb0bnlyqQVKF+Os9gd+pYUjy/3H26q3XyxW+5s05M6e+sTLJwpVJdE7afk\nEvIZxkgdD7x3BO53BTj13dH7mrRwJNi1D57/x+slSbbaYRF4R0rk8P5jbu88JQhB\nDYcqZiNisBLfsoydMJDc/n8/5wI+vfDHXcs5vPrPi+xA8yCNI7DhAnFQ9BXaJBbn\nJ8uscA3Pp/+/ofORziQemdzzyCJ5V4PphLctvuPlo2xaFdBTyUIv0hVOcpJmTZfT\nsddPex+Xvb9lWec3LwNB0jbZ2HOScSZXqzzZaC4ESQKBgQDjEXYNTjZfTnSm63JL\nHVKERHxjmWPdYVtkFZZw0r+FfrGDnguXLir85FSWi5Jczt4nuxiiMfBfBGQlq8tH\nRyVfzhFc3dO79eNl1FYOK6SmbgX/KPJsjamyN7Ul+f8BHvJkV/Ho7yl0GQOTEaVp\niHYqWIjOdLf3/fSJ4q6/SVmv6QKBgQDCkc3bXYmr7CyFlJq4LfvnpwJhCuYmxDlp\n+4GPajEPcpENTPLhg2ax7QShTxMMC2nALXCFe07RmZ4pomGyiggWn5X2DjLW7be3\nl85rWCS/erUNX5TbVpGtInFPqpioMhrWVTkHJZ7ytnyyWqZfZbeCeGEhBxHS99HN\nA+tjW5xNdwKBgQCdZHYSxPr1VxmOtjcUD/AplJswIpvRUPGbT0dnTv3IV8hN9hgM\no8jSYKatb3N1d0MQASUTEFCQXCfa4NjXwF4MqXbpiy1/5PHJnMRFsETBxBPOCSD4\n070jtm+PMllq+nuDyF37WwO94LTUlW+11gwqUBIMIWV/tX1ysjj0iLBtOQKBgCmS\no8ySUN82KFEmbmSaFq/phF2dyY1Q8f+OKKGvC+qEDTAtV9wNinzL6uhYj/ZL3f2c\n9+Tdcvrf+uZkdsGCMrY6xPz9DanUwyNsQUO4YqmzG0pPOOwgtCGtMU7XYaTWh9tx\n/Cxlwm+TxFMLgW7yueIbvI0lCI7uOpq2kq35Hg2DAoGARtm+zZXJjZjbPx3bE+FQ\nMsr3Cg8T7BZwGXag/x24Ph/Jp3XA1Vmzx0oaEM1jDIwiRzsp6ZhzSUlt+XqbBN3y\n+DjxL8JYcbfZyAhdIVJcZMbzed9AwSqoJHex6IZWu+3Y59Q/ChWayRV/+xsHNSfF\n5EMuraRLa+f5DIgi7hcoBuQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "azmi-admission@azmi-admission-verification.iam.gserviceaccount.com",
+  "client_id": "108463778900815686104",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/azmi-admission%40azmi-admission-verification.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -5,7 +5,7 @@ import infoRouter from './routers/info.router.js';
 
 const app = express();
 app.use(cors());
-app.use(json());
+app.use(express.json());
 app.use(infoRouter);
 
 app.use((err, req, res, next)=>{

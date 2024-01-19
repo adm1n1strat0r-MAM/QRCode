@@ -5,15 +5,15 @@ import { google } from "googleapis";
 // import path from "path";
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: "credentials.json",
+  keyFile: "azmi-admission-verification-d81f84986cb1.json",
   scopes: [
-    "https://www.googleapis.com/auth/drive",
-    // "https://www.googleapis.com/auth/spreadsheets",
+    //"https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/spreadsheets",
   ],
 });
 // const drive = google.drive({ version: "v3", auth });
 const authClientObject = await auth.getClient();
-const spreadsheetId = "1cpDWjOUDRvVQQQ1W7qhYzXs4tj11P5q0Uw46zYbTVLw";
+const spreadsheetId = "1ScZWStotYpt0MFgDF34Pj-KPYtMdWaRt49UnHozpZ8M";
 
 const googleSheetsInstance = google.sheets({
   version: "v4",
@@ -25,7 +25,7 @@ const getDataFromSheets = async () => {
   try {
     const response = await googleSheetsInstance.spreadsheets.values.get({
       spreadsheetId,
-      range: "Sheet1!A2:aa100000",
+      range: "Sheet1!B2:aa100000",
     });
 
     return response.data.values;
@@ -47,6 +47,7 @@ export const getAllInfo = async (req, res, next) => {
       ADDRESS: row[5],
       PROGRAM: row[6],
       DURATION: row[7],
+      Url: row[9],
       // ...other fields from the row
     }));
 
@@ -68,6 +69,7 @@ export const getInfo = async (req, res, next) => {
       ADDRESS: row[5],
       PROGRAM: row[6],
       DURATION: row[7],
+      Url: row[9],
 
       // ...other fields from the row
     };
@@ -108,7 +110,7 @@ export const addInfo = async (req, res, next) => {
   try {
     const detail = await googleSheetsInstance.spreadsheets.values.append({
       spreadsheetId, // Use the already authenticated client
-      range: "Sheet1!A1",
+      range: "Sheet1!B53",
       valueInputOption: "USER_ENTERED",
       resource: {
         values: [Object.values(req.body)],
